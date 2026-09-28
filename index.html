@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MovieBook - Home</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="navbar">
+  <a class="logo" href="index.html">Movie<span>Book</span></a>
+  <div class="search-wrap"><input id="searchInput" placeholder="Search for Movies, Events, Plays..." aria-label="Search"></div>
+  <select id="citySelect" class="city"><option>Hyderabad</option><option>Chennai</option><option>Bengaluru</option><option>Vijayawada</option><option>Nellore</option></select>
+  <a class="nav-link" href="bookings.html">My Bookings</a>
+  <button class="btn small" id="loginBtn">Login</button>
+</header>
+<nav class="categories">
+  <a href="#movies">Movies</a><a href="#events">Events</a><a href="#plays">Plays</a><a href="#sports">Sports</a><a href="#activities">Activities</a>
+</nav>
+<main>
+  <section class="hero">
+    <div><p class="eyebrow">MOVIES • EVENTS • SPORTS</p><h1>Book your next<br><span>experience.</span></h1><p>Discover movies, choose your theatre and seats, and complete your booking in a few clicks.</p><a class="btn" href="#movies">Explore Movies</a></div>
+  </section>
+  <section class="section" id="movies">
+    <div class="section-head"><div><h2>Recommended Movies</h2><p>Popular movies in your city</p></div><a href="movies.html">See all</a></div>
+    <div id="movieGrid" class="movie-grid"></div>
+  </section>
+  <section class="section" id="events">
+    <div class="section-head"><div><h2>Events</h2><p>Live experiences near you</p></div></div>
+    <div id="eventGrid" class="card-grid"></div>
+  </section>
+  <section class="section" id="plays"><h2>Plays</h2><div class="info-strip">Book theatre plays and cultural performances.</div></section>
+  <section class="section" id="sports"><h2>Sports</h2><div class="info-strip">Find sports events and reserve your seats.</div></section>
+  <section class="section" id="activities"><h2>Activities</h2><div class="info-strip">Discover workshops, experiences and family activities.</div></section>
+</main>
+<footer><strong>MovieBook</strong><p>Educational BookMyShow-style JavaScript project. Not affiliated with BookMyShow.</p></footer>
+<script src="js/movies.js"></script><script src="js/app.js"></script>
+</body>
+</html>
